@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
+:root {
     --laranja: #EA6D27;
     --branco: #FFFFFF;
     --titulo: #101A24;
@@ -12,55 +13,61 @@
 }
 
 /* padronizando o botão da ladding page */
-.btn{
+.btn {
     border: px solid var(--laranja);
     border-radius: 10px 2px 10px 2px;
     width: 7rem;
     height: 3rem;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
-} 
+}
 
 /* navabar */
-.navbar, .ol-navbar{
+.navbar,
+.ol-navbar {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
 }
-.navbar{
-    justify-content:center ;
+
+.navbar {
+    justify-content: center;
     gap: 12rem;
 }
-.ol-navbar{
+
+.ol-navbar {
     gap: 2rem;
     list-style: none;
 }
-.ol-navbar>li{
+
+.ol-navbar>li {
     cursor: pointer;
 }
 
-.btn-navbar{
+.btn-navbar {
     margin: 0.5rem;
     background: var(--laranja);
     color: var(--branco);
 }
 
-.circulos{
+.circulos {
     position: absolute;
 }
- 
-.circulo1{
+
+.circulo1 {
     position: absolute;
     right: 31rem;
     bottom: 8rem
 }
-.circulo2{
+
+.circulo2 {
     position: absolute;
     right: 31rem;
     bottom: 7rem;
     transform: rotate(350deg);
 }
-.circulo3{
+
+.circulo3 {
     position: relative;
     right: 29rem;
     bottom: 2rem;
@@ -68,7 +75,7 @@
 }
 
 /* main */
-.main{
+.main {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,71 +84,91 @@
 }
 
 /* article */
-.titulo{
+.titulo {
     font-family: 'David Libre', serif;
     font-size: 50pt;
     font-weight: bold;
     color: var(--titulo);
 }
 
-.palavra-espiral{
-    position: relative ;
+.palavra-espiral {
+    position: relative;
     max-width: 5rem;
     bottom: 5rem;
     right: 3rem;
 }
 
-.subtitulo{
+.subtitulo {
     margin-top: 3rem;
     margin-bottom: 3rem;
     color: var(--subitutulo);
 }
 
-.btn-menu{
+.btn-menu {
     background-color: var(--titulo);
     color: var(--branco);
     margin-right: 1rem;
 }
-.btn-book{
+
+.btn-book {
     background-color: var(--laranja);
-    color:var(--branco);
+    color: var(--branco);
     width: 9rem;
+}
+
+.link {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    margin-top: 5rem;
+    gap: 1rem;
+    position: relative;
+}
+
+.link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--subitutulo);
+    border-radius: 100%;
+    width: 2.8rem;
+    height: 2.8rem;
 }
 
 
 /* aside */
 
-.restaurante-main{
+.restaurante-main {
     position: absolute;
     z-index: 1;
     right: 10rem;
     max-width: 25rem;
-}  
+}
 
-.prato-main{
+.prato-main {
     position: absolute;
     z-index: 2;
     right: 28rem;
     top: 37rem;
     max-width: 17rem;
-}  
+}
 
 
-.folha-1{
+.folha-1 {
     position: absolute;
     top: 16rem;
     right: 4rem;
     max-width: 15rem;
 }
 
-.folha-2{
+.folha-2 {
     position: absolute;
     top: 16rem;
     right: 19rem;
     max-width: 30rem;
 }
 
-.folha-3{
+.folha-3 {
     position: absolute;
     top: 38rem;
     right: 3rem;
